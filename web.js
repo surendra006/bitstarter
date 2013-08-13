@@ -4,7 +4,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
 var fs = require('fs');
-var infile = "index.html";
+var infile = "index.jsp";
 
  response.send(fs.readFileSync(infile).toString());
 });
